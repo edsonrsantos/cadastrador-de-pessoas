@@ -4,7 +4,7 @@ const express = require('express');
 // Criar uma aplicação em express
 const app = express();
 
-// Fazer com que a aplicação express atenda a uma requisição
+// Fazer com que a aplicação express atenda a uma requisição de raíz no browser
 app.get('/', (req, res)=>{
     res.send("olá!");
     console.log("Deu certo!... até certo ponto...");
@@ -24,4 +24,5 @@ app.get('/pessoas/:id', (req, res)=>{
 })
 
 // Levantar a aplicação (fazer com que a applicação fique de prontidão)
-app.listen(3000, ()=>{console.log("Servidor roando na porta 3000...")});
+app.listen(3000, ()=>{console.log("Servidor roando na porta 3000...")
+    });
